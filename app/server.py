@@ -13,7 +13,7 @@ from fastai.vision import *
 # model_file_url = 'https://drive.google.com/uc?export=download&id=1AAeFh0LooMyOnB0jQUk8ujuz5drl7llE'
 # monos-costarica.pkl
 model_file_url = 'https://drive.google.com/uc?export=download&id=1QAVK-k2pRpjwkbH6wAWAJH7BG3ev44kI'
-model_file_name = 'model'
+model_file_name = 'monos-costarica.pkl'
 classes = ['araña', 'ardilla', 'aullador', 'capuchino']
 path = Path(__file__).parent
 
@@ -39,7 +39,7 @@ async def setup_learner():
     # learn.load(model_file_name)
     # return learn
     
-    await download_file(export_file_url, path/export_file_name)
+    await download_file(model_file_url, path/model_file_name)
     try:
         learn = load_learner(path, export_file_name)
         return learn
