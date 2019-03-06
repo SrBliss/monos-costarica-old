@@ -41,7 +41,7 @@ async def setup_learner():
     
     await download_file(model_file_url, path/model_file_name)
     try:
-        learn = load_learner(path, export_file_name)
+        learn = load_learner(path, model_file_name)
         return learn
     except RuntimeError as e:
         if len(e.args) > 0 and 'CPU-only machine' in e.args[0]:
