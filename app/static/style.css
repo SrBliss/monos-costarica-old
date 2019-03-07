@@ -33,7 +33,7 @@ body {
 
 .upload-label {
     padding: 10px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .result-label {
@@ -48,7 +48,7 @@ button.choose-file-button {
   border-radius: 2px;
   background-color: #ffffff;
   border: solid 1px #7052CB;
-  font-size: 13px;
+  font-size: 15px;
   color: #7052CB;
 }
 
@@ -58,7 +58,7 @@ button.analyze-button {
     border: solid 1px #7052CB;
     border-radius: 2px;
     background-color: #7052CB;
-    font-size: 13px;
+    font-size: 15px;
     color: #ffffff;
 }
 
