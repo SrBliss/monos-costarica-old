@@ -3,12 +3,43 @@
         <meta charset='utf-8'>
         <link rel='stylesheet' href='../static/style.css'>
         <script src='../static/client.js'></script>
+        <style>
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+            width: 100%;
+            }
+
+            td, th {align="center"
+                border: 1px solid #dddddd;
+                text-align: center;
+                padding: 8px;
+            }
+        </style>
     </head>
     <body>
         <div>
             <div class='center'>
-                <div class='title'>DEMO YOUR ML MODEL</div>
+                <div class='title'>MONOS DE COSTA RICA</div>
                 <div class='content'>
+                    <table>
+                        <col width="25%">
+                        <col width="25%">
+                        <col width="25%">
+                        <col width="25%">
+                        <tr>
+                            <th>Araña</th>
+                            <th>Ardilla</th>
+                            <th>Aullador</th>
+                            <th>Capuchino</th>
+                        </tr>
+                        <tr>
+                            <td><img src="monoarana.jpg" alt="Mono Araña"></td>
+                            <td><img src="monoardilla.jpg" alt="Mono Ardilla"></td>
+                            <td><img src="monoaullador.jpg" alt="Mono Aullador"></td>
+                            <td><img src="monocapuchino.jpg" alt="Mono Capuchino"></td>
+                        </tr>
+                    </table>
                     <div class='no-display'>
                         <input id='file-input'
                             class='no-display'
@@ -17,15 +48,15 @@
                             accept='image/*'
                             onchange='showPicked(this)'>
                     </div>
-                    <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
+                    <button class='choose-file-button' type='button' onclick='showPicker()'>Elige Imagen</button>
                     <div class='upload-label'>
-                        <label id='upload-label'>No file chosen</label>
+                        <label id='upload-label'>Imagen no elegida</label>
                     </div>
                     <div>
                         <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
                     </div>
                     <div class='analyze'>
-                        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
+                        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analizar</button>
                     </div>
                     <div class='result-label'>
                         <label id='result-label'></label>
